@@ -107,3 +107,17 @@ blockquote span{
   .names{ font-size:34px; }
   .monogram{ font-size:68px; }
 }
+/* Backup animation if the script fails */
+.curtain.left {
+  animation: openLeft 1.4s ease 1s forwards;
+}
+.curtain.right {
+  animation: openRight 1.4s ease 1s forwards;
+}
+
+@keyframes openLeft {
+  to { transform: translateX(-100%); }
+}
+@keyframes openRight {
+  to { transform: translateX(100%); }
+}
