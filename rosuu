@@ -1,0 +1,109 @@
+:root{
+  --ivory:#f6f1e8;
+  --gold:#c9a24d;
+  --deep:#2b2b2b;
+}
+
+*{ box-sizing:border-box; }
+body{
+  margin:0;
+  font-family: 'Playfair Display', serif;
+  background: radial-gradient(ellipse at top, #fff 0%, var(--ivory) 55%, #efe6d6 100%);
+  color: var(--deep);
+  min-height:100vh;
+  overflow-x:hidden;
+}
+
+/* Curtains */
+.curtain{
+  position:fixed;
+  top:0; bottom:0;
+  width:50vw;
+  background: linear-gradient(135deg, #7b0f1a, #a01724 40%, #5e0b12 100%);
+  z-index:9999;
+  transition: transform 1.4s cubic-bezier(.77,0,.175,1);
+}
+.curtain.left{ left:0; transform: translateX(0); border-right:2px solid rgba(201,162,77,.6); }
+.curtain.right{ right:0; transform: translateX(0); border-left:2px solid rgba(201,162,77,.6); }
+.open-left{ transform: translateX(-100%); }
+.open-right{ transform: translateX(100%); }
+
+/* Card */
+.card{
+  max-width:720px;
+  margin: 0 auto;
+  padding: 28px 18px 56px;
+  text-align:center;
+}
+
+.monogram{
+  font-family: 'Great Vibes', cursive;
+  font-size:56px;
+  color: var(--gold);
+  margin: 24px 0 8px;
+}
+
+.names{
+  font-size:28px;
+  margin: 6px 0 8px;
+}
+.names span{ color: var(--gold); padding: 0 6px; }
+
+.invite{
+  font-size:16px;
+  opacity:.9;
+  margin-bottom:18px;
+}
+
+.details{
+  background: rgba(255,255,255,.65);
+  border: 1px solid rgba(201,162,77,.5);
+  border-radius:16px;
+  padding:16px 14px 18px;
+  margin:14px 0;
+}
+
+.details h3{
+  margin: 0 0 6px;
+  color: var(--gold);
+  letter-spacing:.5px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:10px;
+  padding:12px 18px;
+  border-radius:999px;
+  background: linear-gradient(135deg, #d6b25a, #b38b2e);
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.blessings{
+  margin:18px 0 6px;
+}
+
+.sharing{ font-size:14px; opacity:.9; }
+
+blockquote{
+  margin:22px auto 0;
+  padding:16px 14px;
+  border-left:3px solid var(--gold);
+  background: rgba(255,255,255,.55);
+  border-radius:10px;
+  font-style:italic;
+}
+blockquote span{
+  display:block;
+  margin-top:6px;
+  font-style:normal;
+  font-size:13px;
+  opacity:.85;
+}
+
+/* Mobile-first tweaks */
+@media (min-width: 768px){
+  .names{ font-size:34px; }
+  .monogram{ font-size:68px; }
+}
