@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roshini & Albert | Betrothal</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Curtains -->
+  <div class="curtain left"></div>
+  <div class="curtain right"></div>
+
+  <main class="card">
+    <h1 class="monogram">R | A</h1>
+    <h2 class="names">Roshini Robin <span>&</span> Albert Babu</h2>
+    <p class="invite">Together with their families, joyfully invite you to the Betrothal Ceremony</p>
+
+    <section class="details">
+      <h3>Betrothal</h3>
+      <p><strong>Saturday, 23rd May 2026 • 4:00 PM</strong></p>
+      <p>Lourde Matha Forane Church, Erode</p>
+      <a class="btn" href="https://maps.google.com/?q=Lourde+Matha+Forane+Church,+Erode" target="_blank">View Betrothal Venue</a>
+    </section>
+
+    <section class="details">
+      <h3>Reception</h3>
+      <p><strong>6:00 PM – 9:00 PM</strong></p>
+      <p>Muthu Mahal, Erode</p>
+      <a class="btn" href="https://maps.google.com/?q=Muthu+Mahal,+Erode" target="_blank">View Reception Venue</a>
+    </section>
+
+    <section class="blessings">
+      <h3>With Blessings</h3>
+      <p><strong>M.C. Robin & Lini Robin</strong><br/>Mullakara House, Erode</p>
+      <p><strong>Babu Antony & Neethu Babu</strong><br/>Akkarakaran House, Irinjalakuda, Thrissur</p>
+      <p class="sharing">Sharing Happiness: Aliamma Chacko, M.C. Rixon, Binu Rixon & MCR Family</p>
+    </section>
+
+    <blockquote>
+      “He prayed for her, she prayed for him and God smiled knowing that their names are already written next to each other.”<br/>
+      <span>— Matthew 18:19</span>
+    </blockquote>
+  </main>
+
+  <script>
+    // Curtain open animation
+    window.addEventListener('load', () => {
+      document.querySelector('.curtain.left').classList.add('open-left');
+      document.querySelector('.curtain.right').classList.add('open-right');
+    });
+  </script>
+</body>
+</html>
